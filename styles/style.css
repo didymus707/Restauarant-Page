@@ -1,0 +1,36 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.pg-bg {
+  /* background: url('./images/bckd.jpg') no-repeat; */
+  /* background-color: #aabaeb;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png"); */
+  background-color: #81a678;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.logo-item{
+  font-family: 'Allura', cursive;
+  font-size: 50px;
+  color: #595f7b;
+}
+
+.pri {
+  color: #fff;
+}
+
+.tabs-container {
+  list-style-type: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
