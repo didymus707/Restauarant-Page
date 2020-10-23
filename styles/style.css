@@ -1,5 +1,8 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 .nav-container {
   display: flex;
@@ -9,9 +12,6 @@
 }
 
 .pg-bg {
-  /* background: url('./images/bckd.jpg') no-repeat; */
-  /* background-color: #aabaeb;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png"); */
   background-color: #81a678;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   background-size: cover;
@@ -21,7 +21,7 @@
 .logo-item{
   font-family: 'Allura', cursive;
   font-size: 50px;
-  color: #595f7b;
+  color: #242b4c;
 }
 
 .pri {
@@ -33,4 +33,69 @@
   width: 40%;
   display: flex;
   justify-content: space-around;
+}
+
+/* Main styles */
+.top-container {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url('../src/images/ppbg1.jpg') no-repeat center center/cover;
+  height: 90vh;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+}
+
+.top-head {
+  font-size: 3em;
+  margin: 20px 0;
+  color:  #abfd53c7;
+}
+
+.menu-btn {
+  font-family: 'Pacifico', cursive;
+  cursor: pointer; 
+  border: 1px solid #00fb9ec7;
+  border-radius: 5px;
+  background-color: transparent; 
+  padding: 10px 25px;
+  color: #f1faee;
+  font-size: 1.1em; 
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-btn:hover {
+  background-color: #00fb9e6b;
+}
+
+.bottom-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  font-size: 3em;
+  margin: 25px 0;
+  font-family: 'Bilbo', cursive;
+}
+
+.about-content {
+  font-family: 'Lato', sans-serif;
+}
+
+.abt-content-pg {
+  font-size: 1.25em;
 }

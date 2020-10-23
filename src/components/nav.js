@@ -11,11 +11,11 @@ const nav = () => {
   logoItems.classList.add('logo-items');
   logo.classList.add('logo-item');
   logoSpan.classList.add('pri');
-  logoSpan.textContent = 'Naija';
+  logoSpan.textContent = 'Naija\'s';
   logo.append(logoSpan, 'Delicacies');
   // for tabs
   const tabsContainer = document.createElement('ul');
-  const items = ['Home', 'Menu', 'About', 'Contact'];
+  const items = ['Home', 'Menu', 'Contact'];
   tabsContainer.classList.add('tabs-container');
   items.forEach(el => {
     const li = document.createElement('li');
