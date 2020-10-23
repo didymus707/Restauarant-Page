@@ -38,7 +38,8 @@
 
 .tabs-item {
   cursor: pointer;
-  padding: 10px 12px
+  padding: 10px 12px;
+  transition: 0.2s ease-in-out;
 }
 
 .tabs-item:hover {
@@ -148,7 +149,7 @@
 .contacts-items {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 54%;
 }
 
 .contact {
@@ -159,7 +160,7 @@
 
 .contact .fas {
   color: #242b4c;
-  font-size: 2em;
+  font-size: 2.3em;
   padding-bottom: 10px;
 }
 
