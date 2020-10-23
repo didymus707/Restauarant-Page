@@ -36,9 +36,20 @@
   justify-content: space-around;
 }
 
+.tabs-item {
+  cursor: pointer;
+  padding: 10px 12px
+}
+
+.tabs-item:hover {
+  background-color: #00fb9e6b;
+  color: #242b4c;
+}
+
 .tabs-items {
   font-family: 'McLaren', cursive;
   color: #fff;
+  font-size: 1.4em;
 }
 
 /* Main styles */
