@@ -1,3 +1,4 @@
+import menu from './menu';
 
 const main = () => {
   // main section
@@ -44,7 +45,10 @@ const main = () => {
   sect2.appendChild(bottomContent);
   mainContainer.append(sect1, sect2);
 
-  return mainContainer;
+  return {
+    mainContainer,
+    menuBtn,
+  };
 };
 
 export default main;
