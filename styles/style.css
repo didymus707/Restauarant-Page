@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import '~font-awesome/css/font-awesome.css';
+/* @import '~font-awesome/css/font-awesome.css'; */
 
 .nav-container {
   display: flex;
@@ -112,8 +112,60 @@
 }
 
 .footer-container {
+  height: 20%;
+}
+
+.footer-contents {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  width: 100%;
+}
+
+.contacts-container {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'McLaren', cursive;
+  color: #fff;
+  font-size: 1em;
+}
+
+.contacts-items {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .fas {
+  color: #242b4c;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+.contact address, object {
+  font-size: 1.1em;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  width: 14%;
+  margin-top: 20px;
+}
+
+.socials i {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  color: #fff;
 }
