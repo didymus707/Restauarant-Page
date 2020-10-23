@@ -30,7 +30,10 @@ const nav = () => {
   logoItems.appendChild(logo);
   logoContainer.appendChild(logoItems);
   navTag.append(logoContainer, tabsContainer);
-  return navTag;
+  return {
+    navTag,
+    logoContainer,
+  };
 };
 
 export default nav;

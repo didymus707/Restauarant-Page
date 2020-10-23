@@ -1,8 +1,9 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import '~font-awesome/css/font-awesome.css';
 
 .nav-container {
   display: flex;
@@ -33,6 +34,11 @@
   width: 40%;
   display: flex;
   justify-content: space-around;
+}
+
+.tabs-items {
+  font-family: 'McLaren', cursive;
+  color: #fff;
 }
 
 /* Main styles */
@@ -76,6 +82,11 @@
   background-color: #00fb9e6b;
 }
 
+.bottom-container {
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) );
+  padding-bottom: 25px;
+}
+
 .bottom-content {
   max-width: 1000px;
   margin: auto;
@@ -89,13 +100,20 @@
 .about {
   font-size: 3em;
   margin: 25px 0;
-  font-family: 'Bilbo', cursive;
+  font-family: 'McLaren', cursive;
 }
 
 .about-content {
-  font-family: 'Lato', sans-serif;
+  font-family: 'McLaren', cursive;
 }
 
 .abt-content-pg {
   font-size: 1.25em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
