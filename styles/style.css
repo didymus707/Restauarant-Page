@@ -65,8 +65,9 @@
 }
 
 .top-container__contact {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url('../src/images/sendMsg.jpg') no-repeat center center/cover;
-  height: 60vh;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url('../src/images/sendMsg.jpg') no-repeat center center/cover; */
+  background: url('../src/images/sendMsg.png') no-repeat center center/cover;
+  height: 80vh;
 }
 
 .top-content {
@@ -169,8 +170,8 @@
 }
 
 .contact .fas {
-  color: #242b4c;
-  font-size: 2.3em;
+  color: #000;
+  font-size: 2.1em;
   padding-bottom: 10px;
 }
 
@@ -230,4 +231,9 @@
   font: italic smaller sans-serif;
   padding: 3px;
   text-align: center;
+}
+
+.par-style {
+  color: #242b4c;
+  font-size: 3em;
 }

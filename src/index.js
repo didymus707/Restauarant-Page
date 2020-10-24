@@ -41,8 +41,12 @@ const showContact = () => {
   const sect = sect1.classList;
   const par = document.querySelector(`.${classs} .para-1`);
   const head = document.querySelector(`.${classs} .top-head`);
-  par.textContent = 'Say Hi';
-  head.textContent = 'Send Us a Message';
+  const topCon = par.parentElement;
+  topCon.style.paddingTop = '0';
+  topCon.style.height = '28%';
+  par.classList.add('par-style');
+  par.textContent = 'Say Hi!';
+  head.textContent = '';
   const child = mainContainer.lastChild;
   if (!sect.contains('top-container__contact')) {
     sect.replace(classs, 'top-container__contact');
