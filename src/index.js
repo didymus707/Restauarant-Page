@@ -44,10 +44,11 @@ const contacts = () => {
 const showHome = () => {
   const classs = bag.firstChild.className;
   const sect = sect1.classList;
+  console.log(sect1, classs);
   const child = bag.lastChild;
   if (!sect.contains('top-container')) {
     home();
-    sect1.classList.replace(classs, 'top-container');
+    sect.replace(classs, 'top-container');
     menuBtn.classList.replace('none', 'menu-btn');
     bag.replaceChild(main().sect2, child);
   }
@@ -56,6 +57,7 @@ const showHome = () => {
 const showMenu = () => {
   const classs = bag.firstChild.className;
   const sect = sect1.classList;
+  console.log(sect1, classs);
   const child = bag.lastChild;
   if (!sect.contains('top-container__menu')) {
     menus();
