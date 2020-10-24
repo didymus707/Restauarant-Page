@@ -4,6 +4,9 @@ const main = () => {
   // main section
   const mainContainer = document.createElement('main');
   mainContainer.classList.add('main-container');
+  const elementsBag = document.createElement('div');
+  elementsBag.classList.add('main-bag');
+  // section 1
   const sect1 = document.createElement('section');
   sect1.classList.add('top-container');
   const topContent = document.createElement('div');
@@ -45,23 +48,24 @@ const main = () => {
   aboutContent.appendChild(abtConPg);
   bottomContent.append(about, aboutContent);
   sect2.appendChild(bottomContent);
-  mainContainer.append(sect1, sect2);
+  elementsBag.append(sect1, sect2);
+  mainContainer.appendChild(elementsBag);
 
-  // clicking menuBtn
-  const showMenu = () => {
-    const child = mainContainer.lastChild;
-    if (sect1.classList.contains('top-container')) {
-      sect1.classList.replace('top-container', 'top-container__menu');
-      menuBtn.classList.replace('menu-btn', 'none');
-      mainContainer.replaceChild(menu().sect2m, child);
-    }
-  };
-  menuBtn.addEventListener('click', showMenu);
+  // // clicking menuBtn
+  // const showMenu = () => {
+  //   const child = mainContainer.lastChild;
+  //   if (sect1.classList.contains('top-container')) {
+  //     sect1.classList.replace('top-container', 'top-container__menu');
+  //     menuBtn.classList.replace('menu-btn', 'none');
+  //     mainContainer.replaceChild(menu().sect2m, child);
+  //   }
+  // };
+  // menuBtn.addEventListener('click', showMenu);
 
   return {
     mainContainer,
     sect2,
-    showMenu,
+    // showMenu,
   };
 };
 

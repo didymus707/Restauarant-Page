@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 /* @import '~font-awesome/css/font-awesome.css'; */
 
+body {
+  overflow-x: hidden;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -65,9 +69,8 @@
 }
 
 .top-container__contact {
-  /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url('../src/images/sendMsg.jpg') no-repeat center center/cover; */
   background: url('../src/images/sendMsg.png') no-repeat center center/cover;
-  height: 80vh;
+  height: 60vh;
 }
 
 .top-content {
@@ -80,6 +83,11 @@
   font-size: 2em;
   font-family: 'Pacifico', cursive;
   padding-top: 45px;
+}
+
+.top-content__contact {
+  height: 56%;
+  padding: 20px;
 }
 
 .top-head {
@@ -233,7 +241,15 @@
   text-align: center;
 }
 
-.par-style {
+.par-style__menu {
+  font-size: 3em;
+  font-family: 'McLaren', cursive;
+}
+
+.par-style__contact {
   color: #242b4c;
   font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 8px;
+  font-family: 'Allura', cursive;
 }
