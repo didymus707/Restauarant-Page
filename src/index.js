@@ -44,7 +44,6 @@ const contacts = () => {
 const showHome = () => {
   const classs = bag.firstChild.className;
   const sect = sect1.classList;
-  console.log(sect1, classs);
   const child = bag.lastChild;
   if (!sect.contains('top-container')) {
     home();
@@ -57,7 +56,6 @@ const showHome = () => {
 const showMenu = () => {
   const classs = bag.firstChild.className;
   const sect = sect1.classList;
-  console.log(sect1, classs);
   const child = bag.lastChild;
   if (!sect.contains('top-container__menu')) {
     menus();
