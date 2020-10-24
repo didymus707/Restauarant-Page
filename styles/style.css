@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 /* @import '~font-awesome/css/font-awesome.css'; */
 
 body {
@@ -23,7 +24,7 @@ body {
   height: 100%;
 }
 
-.logo-item{
+.logo-item {
   font-family: 'Allura', cursive;
   font-size: 50px;
   color: #242b4c;
@@ -59,12 +60,12 @@ body {
 
 /* Main styles */
 .top-container {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url('../src/images/ppbg1.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('../src/images/ppbg1.jpg') no-repeat center center/cover;
   height: 85vh;
 }
 
 .top-container__menu {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url('../src/images/bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('../src/images/bg.jpg') no-repeat center center/cover;
   height: 60vh;
 }
 
@@ -93,19 +94,19 @@ body {
 .top-head {
   font-size: 3em;
   margin: 20px 0;
-  color:  #abfd53c7;
+  color: #abfd53c7;
 }
 
 .menu-btn {
   font-family: 'Pacifico', cursive;
-  cursor: pointer; 
+  cursor: pointer;
   border: 1px solid #00fb9ec7;
   border-radius: 5px;
-  background-color: transparent; 
+  background-color: transparent;
   padding: 10px 25px;
   color: #f1faee;
-  font-size: 1.1em; 
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+  font-size: 1.1em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
   outline: none;
   transition: 0.2s ease-in-out;
 }
@@ -183,7 +184,8 @@ body {
   padding-bottom: 10px;
 }
 
-.contact address, object {
+.contact address,
+object {
   font-size: 1.1em;
 }
 
