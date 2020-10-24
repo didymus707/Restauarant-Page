@@ -40,14 +40,28 @@ const main = () => {
   Nihil officiis itaque veniam blanditiis odio dolorem maxime iusto. Nam, voluptatem quaerat itaque ea suscipit expedita fugiat eos nisi doloribus vero animi, voluptas veritatis porro hic delectus quod est debitis.
   Sit necessitatibus adipisci, iusto sint quia sequi. Cupiditate suscipit voluptatum ratione harum provident, labore sapiente vero quo quasi exercitationem laudantium iure distinctio officia tempore architecto. Culpa nihil nesciunt ratione odio.
   Vero minus repudiandae minima, nobis quidem suscipit nihil in fuga provident! Eum debitis non culpa, quos quod libero cupiditate fugit iure sequi! Quis commodi accusamus quae nulla ut tenetur voluptatibus!`;
+
+  // appending elements
   aboutContent.appendChild(abtConPg);
   bottomContent.append(about, aboutContent);
   sect2.appendChild(bottomContent);
   mainContainer.append(sect1, sect2);
 
+  // clicking menuBtn
+  const showMenu = () => {
+    const child = mainContainer.lastChild;
+    if (sect1.classList.contains('top-container')) {
+      sect1.classList.replace('top-container', 'top-container__menu');
+      menuBtn.classList.replace('menu-btn', 'none');
+      mainContainer.replaceChild(menu().sect2m, child);
+    }
+  };
+  menuBtn.addEventListener('click', showMenu);
+
   return {
     mainContainer,
-    menuBtn,
+    sect2,
+    showMenu,
   };
 };
 
