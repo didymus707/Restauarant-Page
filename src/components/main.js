@@ -1,5 +1,3 @@
-import menu from './menu';
-
 const main = () => {
   // main section
   const mainContainer = document.createElement('main');
