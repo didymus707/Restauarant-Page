@@ -21,12 +21,9 @@ In order to start with the project:
 2. Clone [this repository](https://github.com/didymus707/Restaurant-page.git)
 3. cd inside the project
 
-4. Run
-```
-  npm i
-```
+4. Run ``` npm i ```
 in the terminal to install the dependencies.
-
+5. Run ``` npm run start``` to start your browser
 
 ## Authors
 

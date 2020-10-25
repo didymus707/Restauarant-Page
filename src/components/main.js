@@ -49,21 +49,9 @@ const main = () => {
   elementsBag.append(sect1, sect2);
   mainContainer.appendChild(elementsBag);
 
-  // // clicking menuBtn
-  // const showMenu = () => {
-  //   const child = mainContainer.lastChild;
-  //   if (sect1.classList.contains('top-container')) {
-  //     sect1.classList.replace('top-container', 'top-container__menu');
-  //     menuBtn.classList.replace('menu-btn', 'none');
-  //     mainContainer.replaceChild(menu().sect2m, child);
-  //   }
-  // };
-  // menuBtn.addEventListener('click', showMenu);
-
   return {
     mainContainer,
     sect2,
-    // showMenu,
   };
 };
 
