@@ -1,0 +1,257 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* @import '~font-awesome/css/font-awesome.css'; */
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.pg-bg {
+  background-color: #81a678;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.logo-item {
+  font-family: 'Allura', cursive;
+  font-size: 50px;
+  color: #242b4c;
+}
+
+.pri {
+  color: #fff;
+}
+
+.tabs-container {
+  list-style-type: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabs-item {
+  cursor: pointer;
+  padding: 10px 12px;
+  transition: 0.2s ease-in-out;
+}
+
+.tabs-item:hover {
+  background-color: #00fb9e6b;
+  color: #242b4c;
+}
+
+.tabs-items {
+  font-family: 'McLaren', cursive;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+/* Main styles */
+.top-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('../src/images/ppbg1.jpg') no-repeat center center/cover;
+  height: 85vh;
+}
+
+.top-container__menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('../src/images/bg.jpg') no-repeat center center/cover;
+  height: 60vh;
+}
+
+.top-container__contact {
+  background: url('../src/images/sendMsg.png') no-repeat center center/cover;
+  height: 60vh;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  padding-top: 45px;
+}
+
+.top-content__contact {
+  height: 56%;
+  padding: 20px;
+}
+
+.top-head {
+  font-size: 3em;
+  margin: 20px 0;
+  color: #abfd53c7;
+}
+
+.menu-btn {
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+  border: 1px solid #00fb9ec7;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px 25px;
+  color: #f1faee;
+  font-size: 1.1em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-btn:hover {
+  background-color: #00fb9e6b;
+}
+
+.bottom-container {
+  padding-bottom: 25px;
+}
+
+.bottom-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  font-size: 3em;
+  margin: 25px 0;
+  font-family: 'McLaren', cursive;
+}
+
+.about-content {
+  font-family: 'McLaren', cursive;
+}
+
+.abt-content-pg {
+  font-size: 1.25em;
+}
+
+.footer-container {
+  height: 20%;
+}
+
+.footer-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.contacts-container {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'McLaren', cursive;
+  color: #fff;
+  font-size: 1em;
+}
+
+.contacts-items {
+  display: flex;
+  justify-content: space-around;
+  width: 54%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .fas {
+  color: #000;
+  font-size: 2.1em;
+  padding-bottom: 10px;
+}
+
+.contact address,
+object {
+  font-size: 1.1em;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  width: 14%;
+  margin-top: 20px;
+}
+
+.socials i {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  color: #fff;
+}
+
+.none {
+  display: none;
+}
+
+.menu {
+  font-size: 2em;
+  font-family: 'McLaren', cursive;
+  padding: 20px 0;
+  margin-bottom: 25px;
+}
+
+.foods-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.food-item {
+  flex: 0 0 25%;
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+  max-width: 220px;
+  margin: 5px 0;
+}
+
+.food {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.food-caption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.par-style__menu {
+  font-size: 3em;
+  font-family: 'McLaren', cursive;
+}
+
+.par-style__contact {
+  color: #242b4c;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 8px;
+  font-family: 'Allura', cursive;
+}
