@@ -13,6 +13,7 @@ const sect1 = document.querySelector('.top-container');
 const menuBtn = document.querySelector('.menu-btn');
 const par = document.querySelector('.main-container .para-1');
 const head = document.querySelector('.main-container .top-head');
+const btn = main().menuBtn;
 
 
 const home = () => {
@@ -26,53 +27,48 @@ const home = () => {
 };
 
 const menus = () => {
-  const csname = par.className;
   par.textContent = 'Menu';
   head.textContent = '';
   par.parentElement.classList.remove('top-content__contact');
-  par.classList.replace(csname, 'par-style__menu');
+  par.className = 'par-style__menu';
 };
 
 const contacts = () => {
-  const csname = par.className;
   par.textContent = 'Say Hi!';
   head.textContent = '';
   par.parentElement.classList.add('top-content__contact');
-  par.classList.replace(csname, 'par-style__contact');
+  par.className = 'par-style__contact';
 };
 
 const showHome = () => {
-  const classs = bag.firstChild.className;
   const sect = sect1.classList;
   const child = bag.lastChild;
   if (!sect.contains('top-container')) {
     home();
-    sect.replace(classs, 'top-container');
-    menuBtn.classList.replace('none', 'menu-btn');
+    sect1.className = 'top-container';
+    menuBtn.className = 'menu-btn';
     bag.replaceChild(main().sect2, child);
   }
 };
 
 const showMenu = () => {
-  const classs = bag.firstChild.className;
   const sect = sect1.classList;
   const child = bag.lastChild;
   if (!sect.contains('top-container__menu')) {
     menus();
-    sect.replace(classs, 'top-container__menu');
-    menuBtn.classList.replace('menu-btn', 'none');
+    sect1.className = 'top-container__menu';
+    menuBtn.className = 'none';
     bag.replaceChild(menu().sect2m, child);
   }
 };
 
 const showContact = () => {
-  const classs = bag.firstChild.className;
   const sect = sect1.classList;
   const child = bag.lastChild;
   if (!sect.contains('top-container__contact')) {
     contacts();
-    sect.replace(classs, 'top-container__contact');
-    menuBtn.classList.replace('menu-btn', 'none');
+    sect1.className = 'top-container__contact';
+    menuBtn.className = 'none';
     bag.replaceChild(contact(), child);
   }
 };
@@ -90,3 +86,5 @@ tabs.forEach(el => {
     return el;
   });
 });
+
+btn.onclick = showMenu();

@@ -52,6 +52,7 @@ const main = () => {
   return {
     mainContainer,
     sect2,
+    menuBtn,
   };
 };
 
